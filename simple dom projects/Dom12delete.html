@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Dom manipulation</title>
+</head>
+<body>
+
+ <ul id="languages">
+     <li id="pop">c</li>
+     <li id="pop1">c++</li>
+     <li>java</li>
+
+ </ul>
+ <input type="submit" value="clickme" onclick="deleteElement()">
+
+</body>
+<script>
+function deleteElement()
+{
+var deleteElement=document.getElementById("pop1")
+deleteElement.remove()
+}
+</script>
+</html>

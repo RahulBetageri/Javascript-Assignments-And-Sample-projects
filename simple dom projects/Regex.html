@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>   
+  <input type="text" id="username" placeholder="enter the username">
+  <input type="text" id="phoneno" placeholder="enter the phoneno">
+  <input type="submit" value="submit" onclick="validate()">
+</body>
+
+<script>
+function validate(){
+    var userRegExp=(/^[A-Z]{1}[a-z]+,?[A-Z]{1},?[A-Z]{1}[a-z]+$/)
+    var phoneRegExp=(/^[0-9]{3}-[0-9]{4}-[0-9]{3}$/)
+
+    var un=document.getElementById("username").value
+    var pn=document.getElementById("phoneno").value
+
+    var ok=un.search(userRegExp)
+    if(!ok){
+        alert("username is matched with pattern")
+
+    }
+    else{
+        alert("username is not matched with pattern")
+  
+    }
+
+    ok=pn.search(phoneRegExp)
+    if(!ok)
+    {
+        alert("phone number is matched with pattern")
+    }
+
+    else{
+        alert("phone number is not matched with pattern")
+    }
+
+
+}
+</script>
+
+</html>

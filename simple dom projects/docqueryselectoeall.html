@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>query selector</title>
+    </head>
+    <body>
+        <p>this os first  p tag</p>
+        <p>this os second  p tag</p>
+        <button onclick="operation()">click</button>
+    </body>
+    <script>
+    function operation(){
+        var x =document.querySelectorAll("p")
+           x[0].style.backgroundColor="blue"  //for selected items to style
+
+        for(var i=0;i<x.length;i++){
+         x[i].style.backgroundColor="red"
+       }
+       
+    }
+    </script>
+</html>

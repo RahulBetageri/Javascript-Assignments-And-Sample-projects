@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script src="jquery-3.4.1.min.js"></script>
+<script>
+$(document).ready(()=>{
+    $("#btn").click(()=>{
+        $(":hidden").show(2000)
+    })
+})
+</script>
+<body>
+   fn:<input type="text" id="fn" hidden><br>
+   sn:<input type="text" id="sn"><br>
+   pass:<input type="password" id="pwd"><br>
+   gender:<input type="radio" id="gen" checked>M
+          <input type="radio" id="gen">F<br>
+   languages:
+    eng<input type="checkbox" id="lang" checked>
+    hin<input type="checkbox" id="lang"><br>
+    <button id="btn">click</button>
+    
+</body>
+</html>

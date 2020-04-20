@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Dom manipulation</title>
+</head>
+<body>
+
+ <ul id="languages">
+     <li id="pop">c</li>
+     <li id="pop1">c++</li>
+     <li>java</li>
+
+ </ul>
+ <input type="submit" value="clickme" onclick="addElement()">
+
+</body>
+<script>
+function addElement()
+{
+    var liNode=document.createElement("li")
+    var textNode=document.createTextNode("javascript")
+    liNode.append(textNode)
+
+    var element=document.getElementById("languages")
+    var childNode=document.getElementById("pop")
+    element.insertBefore(liNode,childNode)
+}
+</script>
+</html>

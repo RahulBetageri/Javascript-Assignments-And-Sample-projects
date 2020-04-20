@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<script src="jquery-3.4.1.min.js"></script>
+    <script>
+    $(document).ready(function (){
+      $("#btn").click(function(){
+          $("li:lt(1)").css("background-color","blue")    //$("tr:lt(1),p:lt(1)")
+      })
+
+    })
+    </script>
+<body>
+    <p id="firstpara">this is first paragraph</p>
+    <ul class="subject">
+        <li>java</li>
+        <li>javascript</li>
+        <li>html</li>
+        <li>jquery</li>
+    </ul>
+    <p id="secondpara">this is second paragraph</p>
+    <table>
+        <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>age</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>a</td>
+            <td>20</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>b</td>
+            <td>21</td>
+        </tr>
+    
+    </table>
+    <p id="thirdpara">this is third paragraph</p>
+
+    <button id="btn">click</button>
+</body>
+</html>

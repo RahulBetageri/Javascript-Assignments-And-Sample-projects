@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script src="jquery-3.4.1.min.js"></script>
+<script>
+$(document).ready(()=>{
+    $("#btn").click(()=>{
+        $("div>span").css("background-color","red")
+    })
+})
+</script>
+<body>
+    <div>
+        <p>first paragraph</p>
+        <span>first span </span>
+        <p>second paragraph</p>
+    </div>
+
+    <div>
+        <p>third paragraph</p>
+        <span>second span </span><br>
+        <span>third span </span><br>
+        <span>fourth span </span><br>
+        <p>fourth paragraph</p>
+        <div>
+            <p>fifth paragraph</p>
+        </div>
+    </div>
+    <button id="btn">click</button>
+    
+</body>
+</html>

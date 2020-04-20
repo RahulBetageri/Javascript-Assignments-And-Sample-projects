@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        div{
+     border : 1px solid black;
+     height:100px;
+     width:100px;      
+     background-color: red; 
+      }
+    </style>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+    $(document).ready(()=>{
+        $("#btn").click(()=>{
+            $("h1").show(10000)
+        })
+    })
+    </script>
+</head>
+<body>
+    <h1 hidden>hello abcians</h1>
+    <div> </div>
+    <button id="btn">click me</button>
+</body>
+</html>

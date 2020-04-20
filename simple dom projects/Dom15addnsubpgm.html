@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>operation</legend>
+      <table>
+          <tr>
+              <td>first number</td>
+              <td><input type="text" id="first" ></td>
+          </tr>
+
+          <tr>
+            <td>second number</td>
+            <td><input type="text" id="second" ></td>
+        </tr>
+
+        <tr>
+        <td><input type="submit" value="ADD" onclick="Add()"></td>
+        <td><input type="submit" value="SUB" onclick="Sub()"></td>
+        </tr>
+      </table>
+    </fieldset>
+    <fieldset>
+        <legend>ADDITION</legend>
+        <p id="add"></p>
+    </fieldset>
+
+    <fieldset>
+        <legend>SUBSTRACTION</legend>
+        <p id="sub"></p>
+    </fieldset>
+
+</body>
+<script>
+function Add()
+{
+    var fN=document.getElementById("first").value
+    var sN=document.getElementById("second").value
+    var result=Number(fn)+Number(sN)
+    document.getElementById("add").innerHTML="the added number is"+result
+}
+
+function Sub()
+{
+    var fN=document.getElementById("first").value
+    var sN=document.getElementById("second").value
+    var result=Number(fn)-Number(sN)
+    document.getElementById("sub").innerHTML="the subtracted number is"+result
+}
+</script>
+</html>
